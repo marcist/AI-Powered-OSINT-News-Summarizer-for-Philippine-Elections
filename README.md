@@ -1,51 +1,45 @@
-# 🇵🇭 Philippines Election OSINT Tool
+# 🇵🇭 AI-Powered OSINT News Summarizer for Philippine Elections
 
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/marcist/philippines-election-osint-tool/blob/main/Philippine_Elections_OSINT_Tool.ipynb)
+A Google Colab-based tool that automatically searches, extracts, and summarizes Philippine news articles about election candidates using natural language processing (NLP). Built for **open-source intelligence (OSINT)** and civic research.
 
-A Google Colab-based OSINT tool to help Filipino citizens make informed choices during elections by summarizing recent news about political candidates.
-
----
-
-## 🔍 Features
-
-- 🔎 **Google Search + News Scraper** – Fetches recent articles related to a candidate.
-- 📰 **Automated Article Summarization** – Uses AI to summarize long news articles.
-- 📊 **Simple Interface** – Just enter a name and get the summary instantly.
-- 🌐 **Run in Browser** – No install needed. Works directly in Google Colab.
+![Demo](https://user-images.githubusercontent.com/your-demo.gif) <!-- Replace with actual demo/screenshot if available -->
 
 ---
 
-## 🚀 How to Use
+## 🧠 What It Does
 
-1. Click the **“Open in Colab”** badge above.
-2. Run each cell in order.
-3. Input a **candidate’s name or topic** (e.g., *Leni Robredo*, *Philippine Senate 2025*).
-4. View summarized news from multiple sources.
-
----
-
-## 💡 Why This Tool?
-
-> Many voters don’t have time to read long news articles. This tool empowers Filipino citizens with a quick way to assess candidates based on publicly available, recent, and relevant news using open-source intelligence (OSINT) techniques.
+- ✅ Lets you **select a candidate** from an official list
+- 🔍 Searches trusted Philippine news sources via Google
+- 📄 Scrapes article content
+- ✨ Uses **BART (facebook/bart-large-cnn)** to generate a concise summary
+- ⚠️ Includes a disclaimer on content use
 
 ---
 
-## 🛠 Technologies Used
+## 📰 News Sources Covered
 
-- Python
-- Google Colab
-- `newspaper3k`, `BeautifulSoup`, `transformers`, `googlesearch-python`
-
----
-
-## 📄 License
-
-MIT License – feel free to use, share, or adapt!
+- [ABS-CBN](https://news.abs-cbn.com)
+- [PhilStar](https://philstar.com)
+- [Rappler](https://rappler.com)
+- [GMA News](https://gmanetwork.com)
+- [Inquirer](https://inquirer.net)
+- [The Manila Times](https://manilatimes.net)
 
 ---
 
-## 🤝 Contributions
+## 🔧 How to Use (Google Colab)
 
-Pull requests and suggestions are welcome! 🇵🇭
+> 💡 No installation needed if you use Google Colab!
 
+1. 📂 Open the Colab notebook here: [🔗 View in Colab](https://colab.research.google.com/drive/1H00zrFzopSw8_D35yJ2LDdjf2WZpcAkQ?usp=sharing)
+2. 🔘 Select a candidate from the dropdown
+3. 🖱 Click `Search News`
+4. 📊 Wait as it searches and summarizes top 5 relevant news articles
 
+---
+
+## 📦 Dependencies
+
+Automatically handled in Colab, but for local use:
+```bash
+pip install requests beautifulsoup4 googlesearch-python newspaper3k transformers ipywidgets tqdm
